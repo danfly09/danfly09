@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-**danfly09/danfly09** is a ✨ _special_ ✨ repository because its `README.md` appears on Daniel's GitHub profile.
+**danfly09/githome** is a ✨ _special_ ✨ repository because its `README.md` appears on Daniel's GitHub profile.
 
 Here are some ideas to get you started:
 
