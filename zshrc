@@ -20,8 +20,8 @@ promptinit
 bindkey -e
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-HISTSIZE=5000
-SAVEHIST=5000
+HISTSIZE=2000
+SAVEHIST=2000
 HISTFILE=~/.zshistory
 
 # Use modern completion system
@@ -93,6 +93,9 @@ bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+
+# Add .local/bin to PATH
+export PATH="$HOME/.local/bin:$PATH"
 
 # Init Starship Prompt
 eval "$(starship init zsh)"
