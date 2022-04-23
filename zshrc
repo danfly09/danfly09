@@ -20,8 +20,8 @@ promptinit
 bindkey -e
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-HISTSIZE=2000
-SAVEHIST=2000
+HISTSIZE=5000
+SAVEHIST=5000
 HISTFILE=~/.zshistory
 
 # Use modern completion system
@@ -73,6 +73,7 @@ alias cp="cp -i"
 alias df='df -h'
 alias free='free -m'
 alias ls='ls --color=auto'
+alias ll='ls -Al'
 alias py='python3'
 
 # Color man pages
@@ -95,7 +96,7 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
 # Add .local/bin to PATH
-export PATH="$HOME/.local/bin:$PATH"
+#export PATH="$HOME/.local/bin:$PATH"
 
 # Init Starship Prompt
 eval "$(starship init zsh)"
