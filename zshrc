@@ -95,8 +95,10 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-# Add .local/bin to PATH
-#export PATH="$HOME/.local/bin:$PATH"
+# Tweaks for WSL
+if [ -n  "$WSL_DISTRO_NAME" ]; then
+  export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/danfly/.local/bin"
+fi
 
 # Init Starship Prompt
 eval "$(starship init zsh)"
