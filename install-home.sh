@@ -18,3 +18,4 @@ fi
 ln -s $PWD/zsh_plugins $HOME/.local/share
 ln -s $PWD/zshrc $HOME/.zshrc
 ln -s $PWD/vimrc $HOME/.vimrc
+
