@@ -1,28 +1,25 @@
 ## Options section
+setopt auto_cd
 setopt correct
-setopt extendedglob
-setopt nocaseglob
-setopt rcexpandparam
-setopt nocheckjobs
-setopt numericglobsort
-setopt nobeep
-setopt appendhistory
-setopt histignorealldups
-setopt autocd
+setopt extended_glob
+setopt no_case_glob
+setopt rc_expand_param
+setopt no_check_jobs
+setopt numeric_glob_sort
+setopt no_beep
+setopt append_history
+setopt hist_ignore_dups
+setopt hist_find_no_dups
 setopt inc_append_history
-setopt histignorealldups sharehistory
-
-# Set up the prompt
-autoload -Uz promptinit
-promptinit
+setopt share_history
 
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-HISTSIZE=5000
-SAVEHIST=5000
-HISTFILE=~/.zshistory
+HISTSIZE=2000
+SAVEHIST=2000
+HISTFILE=~/.zsh_history
 
 # Use modern completion system
 autoload -Uz compinit
@@ -88,8 +85,9 @@ export LESS=-R
 
 # Use history substring search
 source $HOME/.local/share/zsh_plugins/zsh-history-substring-search.zsh
-# bind UP and DOWN arrow keys to history substring search
 zmodload zsh/terminfo
+
+# bind UP and DOWN arrow keys to history substring search
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 bindkey '^[[A' history-substring-search-up

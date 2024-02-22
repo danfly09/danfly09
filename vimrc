@@ -60,3 +60,7 @@ set foldlevelstart=20
 
 " space bar as insert mode key, for keyboards without insert key.
 :nnoremap <Space> i
+
+" Enable mouse
+set mouse=a
+
