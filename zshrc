@@ -22,6 +22,7 @@ SAVEHIST=2000
 HISTFILE=~/.zsh_history
 
 # Use modern completion system
+fpath=(~/.local/share/zsh/completion $fpath)
 autoload -Uz compinit
 compinit
 
@@ -84,7 +85,7 @@ export LESS_TERMCAP_us=$'\E[01;36m'
 export LESS=-R
 
 # Use history substring search
-source $HOME/.local/share/zsh_plugins/zsh-history-substring-search.zsh
+source $HOME/.local/share/zsh/plugins/zsh-history-substring-search.zsh
 zmodload zsh/terminfo
 
 # bind UP and DOWN arrow keys to history substring search
