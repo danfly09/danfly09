@@ -15,7 +15,7 @@ if ! ls "$HOME/.local/share" >/dev/null 2>&1; then
 fi
 
 # Link files to your home directory
-ln -s $PWD/zsh_plugins $HOME/.local/share
+ln -s $PWD/zsh $HOME/.local/share/
 ln -s $PWD/zshrc $HOME/.zshrc
 ln -s $PWD/vimrc $HOME/.vimrc
 
