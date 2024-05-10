@@ -9,7 +9,7 @@ nnoremap <F5> :set list!<CR>
 set ignorecase
 
 syntax on
-colorscheme ron
+colorscheme elflord
 set autoindent
 
 " Config how set list display white spaces
@@ -63,4 +63,7 @@ set foldlevelstart=20
 
 " Enable mouse
 set mouse=a
+
+" Show line numbers
+set number
 
