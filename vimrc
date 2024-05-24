@@ -1,3 +1,16 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" user plugins (Optional)
+Plugin 'vim-airline/vim-airline'
+
 map <F2> :set nu!<CR>
 imap <F2> <C-O>:set nu!<CR>
 map <F3> :nohl<CR>
@@ -66,4 +79,3 @@ set mouse=a
 
 " Show line numbers
 set number
-

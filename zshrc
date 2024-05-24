@@ -73,6 +73,7 @@ alias free='free -m'
 alias ls='ls --color=auto'
 alias ll='ls -Al'
 alias py='python3'
+alias python='python3'
 
 # Color man pages
 export LESS_TERMCAP_mb=$'\E[01;32m'
@@ -101,3 +102,7 @@ fi
 
 # Init Starship Prompt
 eval "$(starship init zsh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
