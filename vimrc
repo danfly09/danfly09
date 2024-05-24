@@ -11,6 +11,10 @@ Plugin 'VundleVim/Vundle.vim'
 " user plugins (Optional)
 Plugin 'vim-airline/vim-airline'
 
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
 map <F2> :set nu!<CR>
 imap <F2> <C-O>:set nu!<CR>
 map <F3> :nohl<CR>
@@ -77,5 +81,3 @@ set foldlevelstart=20
 " Enable mouse
 set mouse=a
 
-" Show line numbers
-set number
